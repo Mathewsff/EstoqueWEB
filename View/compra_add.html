@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Adicionar Compra</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+          background-image: url('bgimg.webp');
+        }
+    </style>  
+</head>
+  <body>
+      
+    <form action="CompraController" method="post" class="container">
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="addCompra">ID</label>
+                <input type="text" class="form-control" id="id" name="id" hidden value="0">
+                <input type="text" class="form-control" id="id" name="id" disabled value="0" placeholder="Id da Compra">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="addQuantidade">Quantidade</label>
+                <input type="text" class="form-control" id="addQuantidade" name="addQuantidade" required placeholder="Quantidade">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="addValor">Valor</label>
+                <input type="text" class="form-control" id="addValor" name="addValor" required placeholder="Valor da Compra">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="addData">Data</label>
+                <input type="date" class="form-control" id="addData" name="addData" required placeholder="DD/MM/AAAA">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="iDFornecedor">ID Fornecedor</label>
+                <input type="text" class="form-control" id="iDFornecedor" name="iDFornecedor" required placeholder="ID do Fornecedor">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="iDProduto">ID Produto</label>
+                <input type="text" class="form-control" id="iDProduto" name="iDProduto" required placeholder="ID do Produto">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="iDFuncionario">ID Funcionario</label>
+                <input type="text" class="form-control" id="iDFuncionario" name="iDFuncionario" required placeholder="ID do Funcionário">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+        <button type="button" class="btn btn-danger" onclick="history.back()">Cancelar</button>
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

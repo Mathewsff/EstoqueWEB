@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('bgimg.webp');
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="FornecedorController" method="post" class="container">
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="addFornecedor">ID</label>
+                <input type="text" class="form-control" id="id" name="id" hidden placeholder="Id do Cliente" value="0">
+                <input type="text" class="form-control" id="id" disabled name="id"
+                    placeholder="Id do Fornecedor" value="0">
+            </div>
+            <div class="form-group col-md-8">
+                <label for="addRazao">Razão Social</label>
+                <input type="text" class="form-control" id="addRazao" name="addRazao" required placeholder="Nome do Fornecedor">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="addCNPJ">CNPJ</label>
+                <input type="text" class="form-control" id="addCNPJ" name="addCNPJ" required placeholder="CNPJ do Fornecedor">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="addEndereco">Endereço</label>
+                <input type="text" class="form-control" id="addEndereco" name="addEndereco" required placeholder="Endereço">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="addCEP">CEP</label>
+                <input type="text" class="form-control" id="addCEP" name="addCEP" required placeholder="CEP">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="addCidade" name="addCidade" required placeholder="Cidade">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="addBairro" name="addBairro" class="form-control" required placeholder="Bairro">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="addUF">UF</label>
+                <input type="text" class="form-control" id="addUF" name="addUF" required placeholder="UF">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="addTelefone">Telefone</label>
+                <input type="text" class="form-control" id="addTelefone" name="addTelefone" required placeholder="Telefone">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="addEmail">Email</label>
+                <input type="text" class="form-control" id="addEmail" name="addEmail" required placeholder="Email">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+        <button type="button" class="btn btn-danger" onclick="history.back()">Cancelar</button>
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

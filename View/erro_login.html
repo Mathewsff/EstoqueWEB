@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Funcionários</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap & DataTables CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="datatables.min.css"/>
+        <style>
+            body {
+                background-image: url('bgimg.webp');
+            }
+        </style>
+    </head>
+    <body>
+
+        <button type="button" class="btn btn-info" onclick="history.back()">Voltar</button>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="datatables.min.js"></script>
+
+        <script>
+
+
+            window.alert("Usuário ou Senha inválido.");
+
+
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('#table_Funcionario').DataTable();
+            });
+        </script>
+    </body>
+</html>

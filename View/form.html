@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <title>Entrar</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                background-image: url('bgimg.webp');
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <form action="ProcessForm" method="post" onsubmit="return validation()">
+            <div class="row justify-content-center ">
+                <div class="form-group">
+                    <label for="login">Login:</label><br>
+                    <input type="text" id="login" name="login" placeholder="Usuário" required><br>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="form-group">    
+                    <label for="password">Senha:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Senha"><br>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <input type="submit" class="btn btn-primary" value="Enviar">
+            </div>
+        </form>
+        <br>
+        <div class="list-group justify-content-center mt-5 container">
+            
+            <a href="ProdutoController?action=show" class="list-group-item list-group-item-primary list-group-item-action">Consultar Produtos Disponíveis para Venda</a>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Apenas um template para transitar entre as paginas, Sera modificado na versão final-->
+        <script>
+            $(document).ready(function () {
+                $(function () {
+                    $('.login').mask('999.999.999-99');
+                });
+            });
+        </script>
+        <script>
+            function validation() {
+                var input_login = document.getElementById("login").value;
+                var input_pw = document.getElementById("password").value;
+                if (input_login !== "" && input_pw !== "") {
+                    return true;
+                } else {
+                    window.alert("Digite seu Usuário ou Senha.");
+                    return false;
+                }
+            }
+        </script>
+
+    </body>
+</html>
