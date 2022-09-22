@@ -11,3 +11,5 @@ Neste repósitório encontra-se tanto o Back-end quanto o Front-end da aplicaç�
 Linguagens Utilizadas: Java, Javascript, CSS e HTML.
 
 Banco de Dados Utilizado: MySQL
+
+Bibliotecas utilizadas: Bootstrap e Jquery
